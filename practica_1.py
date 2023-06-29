@@ -1,4 +1,4 @@
-#exercise 1
+'''#exercise 1
 line_1 ='A la vibora, vibora\n'
 line_2 ='De la mar, de la mar\n'
 line_3 ='Por aqui pueden pasar\n'
@@ -38,20 +38,40 @@ print('\n')
 numero = input('Escribe un numero: ')
 print('la suma de:',numero,"+",numero*2,'+',numero*3,'=',int(numero)+int(numero*2)+int(numero*3))
 
-#Exercise 5
-print('\n')
+#Exercise 5'''
 
-numero_par_impar = int(input('Escribe un numero: '))
-calculo_par = numero_par_impar % 2
-if calculo_par == 0 :
-    print(numero_par_impar,'es par')
-else :
-    print(numero_par_impar,'es impar')
 
-#Exercise 6
+print('Escribe un numero')
+numero = input(float())
+if numero == input(float()):
+        if numero % 2 == 0 :
+                print(numero,'es par')
+        else :
+                print(numero,'es impar')
+else:
+    print('Escribe un digito')
+
+while numero != int():
+    print('escribe un digito')
+    numero = input(int())
+    print('gracias')
+       
+
+'''print('what is your age?')
+myAge = input(int())
+ 
+if myAge == input(int()):
+    print('thank you')
+else:
+    print('please enter the number only')
+ 
+while myAge != int():
+    print('please enter the number only')
+    myAge = input(int())
+print('thank you')'''
+'''#Exercise 6
 print('\n')
 
 base = int(input('Escribe la base del triangulo: '))
-altura = int(input('Escribe la altura del triangulo: '))
+altura = int(input('Escribe la altura del triangulo: '))'''
 
-print('El area del triangulo es:',base*altura/2)
