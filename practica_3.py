@@ -86,8 +86,36 @@ fibonacci(numero)'''
 
 #7.-Escribe un programa que emule el funcionamiento de una calculadora simple. 
 #Este es un posible ejemplo de la ejecución del programa en una terminal:
+init = True
+cosiente = []
+while init != False:
+    instrucciones = input()
+    if instrucciones != '=' :
+        list_instrucciones = list(instrucciones)
+        if len(list_instrucciones)<=1:
+            cosiente1 = list_instrucciones[0]
+            cosiente.append(int(cosiente1))
+            print(cosiente)
+        else:
+            cosiente2 = list_instrucciones[1]
+            cosiente.append(int(cosiente2))
 
-        
+            operador = list_instrucciones[0]
+            if operador == '+':
+               operacion = cosiente[-1] + cosiente[-2]
+            elif operador == '-':
+                operacion = cosiente[-2] - cosiente[-1]
+            elif operador == '*':
+                operacion = cosiente[-1] * cosiente[-2]
+            else:
+                operacion = cosiente[-2] / cosiente[-1]
+
+            
+            cosiente.append(operacion)
+            print(operacion)
+    else:
+        init = False
+print(cosiente)
 
 
 
