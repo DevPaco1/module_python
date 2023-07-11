@@ -128,7 +128,7 @@ def operator_separator(dato_input):
         operator = dato_input[0]
         return operator
     
-def logic_solucion(list_datos,list_operator):
+def logical_solution(list_datos,list_operator):
     number1= int(list_datos[-2])
     number2 = int(list_datos[-1])
     operador = list_operator[-1]
@@ -150,11 +150,11 @@ while continuar != False:
         continuar = False 
         break
     if  '=' in dato_input[-1]:
-        logic_solucion(list_datos,list_operator)
+        logical_solution(list_datos,list_operator)
         continuar = False 
         break
     if len(dato_input)>1:
-        logic_solucion(list_datos,list_operator)
+        logical_solution(list_datos,list_operator)
         print(list_datos[-1])
 
 print('Resultado final: ',list_datos[-1])
